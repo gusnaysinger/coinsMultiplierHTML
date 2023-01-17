@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <title>Coins Multiplier | Gustavo</title>
+</head>
+<body>
+    
+    <div class="container align-items-center">
+        <div class="card mt-5">
+            <div class="card-header text-center">
+                <i class="fa-solid fa-coins"></i> Coins Multiplier
+            </div>
+            <div class="row row-m">
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" id="user">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1">Saldo:</span>
+                        <input type="number" class="form-control" placeholder="Saldo" aria-describedby="basic-addon1" value="5" id="coins">
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="input-group input-group-lg">
+                    <input type="number" class="form-control mt-4 text-center" aria-label="Sizing example input" value="" placeholder="Valor da aposta" id="betValue">
+                  </div>
+                <div class="input-group input-group-lg">
+                    <input type="number" class="form-control mt-3 text-center" aria-label="Sizing example input" value="" placeholder="Número da sorte (1-50)" id="betNumber">
+                  </div>
+                  <div class="d-grid gap-2">
+                      <button type="button" class="btn btn-outline-warning btn-lg mt-4" onclick="play()">Jogar</button>
+                    </div>
+                <div class="input-group input-group-lg">
+                    <input type="number" class="form-control mt-3 text-center" aria-label="Sizing example input" value="" readonly id="result">
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f6b5df5528.js" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
